@@ -7,7 +7,7 @@ vue 文档: [https://cn.vuejs.org](https://cn.vuejs.org)
 vue-plugin-hiprint 项目: [https://gitee.com/CcSimple/vue-plugin-hiprint](https://gitee.com/CcSimple/vue-plugin-hiprint)
 
 
-`如果你像用 vite 项目，可以参考文档:` [vite](https://cn.vitejs.dev)
+`如果你想用 vite 项目，可以参考文档:` [vite](https://cn.vitejs.dev)
 
 > 本分支没有使用其他 UI 框架。
 
