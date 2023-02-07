@@ -1,0 +1,111 @@
+/* 字体样式 */
+@import "./assets/css/iconfont.css";
+
+/* 定义全局样式 */
+/* 在 main.js 入库文件引入 */
+body {
+  margin: 0;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-corner {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 2px;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+::-webkit-scrollbar-thumb:hover {
+  background: purple;
+}
+
+/* flex */
+.flex-row {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 5;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+/* button 样式 为了好看点 */
+button {
+  padding: 10px;
+  min-width: 100px;
+  color: white;
+  opacity: 0.9;
+  cursor: pointer;
+  border-width: 0;
+  border: 1px solid #d9d9d9;
+}
+button:hover {
+  opacity: 1;
+}
+button i {
+  font-size: 16px !important;
+}
+.circle,
+.circle-4 {
+  border-radius: 4px;
+}
+.circle-10 {
+  border-radius: 10px;
+}
+/* 按钮颜色 */
+.primary {
+  background: purple;
+}
+.info {
+  color: #000;
+  background: none;
+}
+.secondary {
+  background: #1976d2;
+}
+.warning {
+  background: #d32f2f;
+}

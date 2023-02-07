@@ -1,0 +1,27 @@
+<!--
+ * @Description: 
+ * @Author: CcSimple
+ * @Github: https://github.com/CcSimple
+ * @Date: 2023-02-06 17:27:30
+ * @LastEditors: CcSimple
+ * @LastEditTime: 2023-02-07 22:13:19
+-->
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 必须引入,否则打印不正常或重叠 -->
+    <link rel="stylesheet" type="text/css" media="print" href="<%= BASE_URL %>print-lock.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

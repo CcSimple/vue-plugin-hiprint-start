@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3559670 */
+  src: url("iconfont.woff2?t=1667531544868") format("woff2"),
+    url("iconfont.woff?t=1667531544868") format("woff"),
+    url("iconfont.ttf?t=1667531544868") format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sv-edit-data:before {
+  content: "\e655";
+}
+
+.sv-shimmer:before {
+  content: "\e6d6";
+}
+
+.sv-origin:before {
+  content: "\e6ac";
+}
+
+.sv-zIndex:before {
+  content: "\e603";
+}
+
+.sv-structure:before {
+  content: "\ec6f";
+}
+
+.sv-list:before {
+  content: "\e742";
+}
+
+.sv-grid:before {
+  content: "\e849";
+}
+
+.sv-flow:before {
+  content: "\e611";
+}
+
+.sv-switch:before {
+  content: "\e6f6";
+}
+
+.sv-theme:before {
+  content: "\e644";
+}
+
+.sv-element:before {
+  content: "\e615";
+}
+
+.sv-pdf:before {
+  content: "\e67a";
+}
+
+.sv-browser:before {
+  content: "\e726";
+}
+
+.sv-font-big:before {
+  content: "\eb04";
+}
+
+.sv-font-small:before {
+  content: "\eb05";
+}
+
+.sv-font-bold:before {
+  content: "\ec83";
+}
+
+.sv-font-tiny:before {
+  content: "\e6c1";
+}
+
+.sv-options:before {
+  content: "\e607";
+}
+
+.sv-close:before {
+  content: "\e646";
+}
+
+.sv-clone:before {
+  content: "\ec7a";
+}
+
+.sv-cut:before {
+  content: "\e643";
+}
+
+.sv-preview:before {
+  content: "\e61c";
+}
+
+.sv-zoom-in:before {
+  content: "\e60f";
+}
+
+.sv-zoom-out:before {
+  content: "\e610";
+}
+
+.sv-edit:before {
+  content: "\e6b9";
+}
+
+.sv-paste:before {
+  content: "\e6c0";
+}
+
+.sv-copy:before {
+  content: "\e6c2";
+}
+
+.sv-unlock:before {
+  content: "\e6e7";
+}
+
+.sv-lock:before {
+  content: "\e6e8";
+}
+
+.sv-zIndex-plus:before {
+  content: "\e715";
+}
+
+.sv-zIndex-minus:before {
+  content: "\e716";
+}
+
+.sv-zIndex-top:before {
+  content: "\e71f";
+}
+
+.sv-sigh:before {
+  content: "\e724";
+}
+
+.sv-ask:before {
+  content: "\e725";
+}
+
+.sv-dev-code:before {
+  content: "\e733";
+}
+
+.sv-bug:before {
+  content: "\e73f";
+}
+
+.sv-zIndex-bottom:before {
+  content: "\e71d";
+}
+
+.sv-new:before {
+  content: "\e64d";
+}
+
+.sv-clear:before {
+  content: "\e62d";
+}
+
+.sv-base:before {
+  content: "\e7d0";
+}
+
+.sv-export:before {
+  content: "\eabf";
+}
+
+.sv-import:before {
+  content: "\eac0";
+}
+
+.sv-add:before {
+  content: "\eaf3";
+}
+
+.sv-printer:before {
+  content: "\eabe";
+}
+
+.sv-save:before {
+  content: "\eabd";
+}
+
+.sv-more:before {
+  content: "\e625";
+}
+
+.sv-menu:before {
+  content: "\e628";
+}
+
+.sv-nav-right:before {
+  content: "\e629";
+}
+
+.sv-nav-up:before {
+  content: "\e62a";
+}
+
+.sv-nav-left:before {
+  content: "\e62b";
+}
+
+.sv-nav-down:before {
+  content: "\e62c";
+}
+
+.sv-setting:before {
+  content: "\e62e";
+}
+
+.sv-delete:before {
+  content: "\e630";
+}
+
+.sv-undo:before {
+  content: "\e631";
+}
+
+.sv-redo:before {
+  content: "\e632";
+}
+
+.sv-refresh:before {
+  content: "\e634";
+}
+
+.sv-history:before {
+  content: "\e635";
+}
+
+.sv-html:before {
+  content: "\e633";
+}
+
+.sv-longText:before {
+  content: "\e64c";
+}
+
+.sv-table:before {
+  content: "\ec15";
+}
+
+.sv-qrcode:before {
+  content: "\e642";
+}
+
+.sv-image:before {
+  content: "\e8ba";
+}
+
+.sv-barcode:before {
+  content: "\eb64";
+}
+
+.sv-text:before {
+  content: "\e60b";
+}
+
+.sv-vline:before {
+  content: "\e63a";
+}
+
+.sv-oval:before {
+  content: "\eb99";
+}
+
+.sv-rect:before {
+  content: "\e620";
+}
+
+.sv-hline:before {
+  content: "\e60a";
+}
+
+.sv-print-c:before {
+  content: "\e602";
+}
+
+.sv-print:before {
+  content: "\e601";
+}
+
+.sv-c:before {
+  content: "\e600";
+}
+
+.sv-vertical:before {
+  content: "\e706";
+}
+
+.sv-distributeHor:before {
+  content: "\e707";
+}
+
+.sv-right:before {
+  content: "\e708";
+}
+
+.sv-left:before {
+  content: "\e709";
+}
+
+.sv-distributeVer:before {
+  content: "\e70f";
+}
+
+.sv-bottom:before {
+  content: "\e710";
+}
+
+.sv-top:before {
+  content: "\e711";
+}
+
+.sv-horizontal:before {
+  content: "\e712";
+}
+
+.sv-rotate:before {
+  content: "\e66f";
+}
+
+.sv-butongbu:before {
+  content: "\e636";
+}
+
+.sv-synchronization:before {
+  content: "\e676";
+}
