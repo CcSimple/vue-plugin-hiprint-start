@@ -40,7 +40,7 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           npm run build
-          > demo/.nojekyll
+          > dist/.nojekyll
 
       - name: githubPage
         uses: JamesIves/github-pages-deploy-action@v4
