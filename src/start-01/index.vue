@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-07 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-07 21:48:50
+ * @LastEditTime: 2023-02-07 23:26:12
 -->
 <template>
   <div class="flex-col">
@@ -127,7 +127,22 @@ const buildDesigner = () => {
  * 浏览器打印
  */
 const print = () => {
-  hiprintTemplate.print({});
+  // 打印数据，key 对应 元素的 字段名
+  let printData = { name: "CcSimple" };
+  // 参数: 打印时设置 左偏移量，上偏移量
+  let options = { leftOffset: -1, topOffset: -1 };
+  // 扩展
+  let ext = {
+    callback: () => {
+      console.log("浏览器打印窗口已打开");
+    },
+    styleHandler: () => {
+      // 重写 文本 打印样式
+      return "<style>.hiprint-printElement-text{color:red !important;}</style>";
+    },
+  };
+  // 调用浏览器打印
+  hiprintTemplate.print(printData, options, ext);
 };
 /**
  * 直接打印: 借助客户端,静默打印(无弹窗直接打印)
