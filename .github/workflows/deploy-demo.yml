@@ -47,3 +47,19 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+
+      - name: gitee同步
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
+        with:
+          source-repo: git@github.com:CcSimple/vue-plugin-hiprint-start.git
+          destination-repo: git@gitee.com:CcSimple/vue-plugin-hiprint-start.git
+
+      - name: giteePages
+        uses: yanglbme/gitee-pages-action@master
+        with:
+          gitee-username: CcSimple
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: CcSimple/vue-plugin-hiprint-start
+          branch: gh-pages
