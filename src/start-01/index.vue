@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-07 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-07 23:26:12
+ * @LastEditTime: 2023-02-09 11:25:36
 -->
 <template>
   <div class="flex-col">
@@ -120,6 +120,7 @@ const buildDesigner = () => {
     settingContainer: "#PrintElementOptionSetting", // 元素参数容器
   });
   // 构建 并填充到 容器中
+  // 可以先 console.log($("#hiprint-printTemplate")) 看看是否有该 dom
   hiprintTemplate.design("#hiprint-printTemplate");
 };
 
