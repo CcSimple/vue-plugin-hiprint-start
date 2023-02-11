@@ -4,17 +4,19 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-07 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-10 10:32:40
+ * @LastEditTime: 2023-02-11 15:50:41
 -->
 <template>
   <div class="flex-col">
     <div class="flex-row justify-center" style="margin-bottom: 10px">
+      <!-- 纸张大小 A3、A4 等 -->
       <div class="paper">
         <template v-for="(value, type) in paperTypes" :key="type">
           <button :class="curPaperType === type ? 'api' : 'info'" @click="setPaper(type, value)">
             {{ type }}
           </button>
         </template>
+        <!-- 自定义纸张 -->
         <button :class="'other' == curPaperType ? 'api' : 'info'" class="auto" @click="showPaperPop">自定义纸张</button>
         <div class="popover">
           <div class="popover-content flex-col" v-show="paperPopVisible">
@@ -28,6 +30,7 @@
           </div>
         </div>
       </div>
+      <!-- 缩放 -->
       <div class="flex-row align-center ml-10">
         <button class="info circle-10" @click="changeScale(false)"><i class="iconfont sv-zoom-out" /></button>
         <div style="margin: 0 4px; width: 40px">{{ (scaleValue * 100).toFixed(0) }}%</div>
@@ -44,6 +47,10 @@
       <button class="api circle-10 ml-10" @click.stop="exportJson">
         <i class="iconfont sv-export" />
         导出模板 json
+      </button>
+      <button class="api circle-10 ml-10" @click.stop="exportJsonTid">
+        导出模板 json tid
+        <i class="iconfont sv-export" />
       </button>
       <button class="secondary circle-10 ml-10" @click.stop="print">
         <i class="iconfont sv-printer" />
@@ -104,7 +111,7 @@ const { scaleValue, changeScale } = useZoom(TEMPLATE_KEY);
 // 自定义传入 provider 的参数
 let options = {
   config: {
-    tid: "providerModule1.header",
+    tid: "providerModule1.config",
     title: "参数provider示例",
     type: "text",
     options: {
@@ -217,6 +224,16 @@ const clearPaper = () => {
  */
 const exportJson = () => {
   let json = hiprintTemplate.getJson();
+  console.log(json);
+  alert("导出成功! 请查看控制台输出");
+};
+/**
+ * 导出模板 json tid
+ * 仅导出 options, 不导出 printElementType
+ * 必须确保 hiprintTemplate 已成功创建
+ */
+ const exportJsonTid = () => {
+  let json = hiprintTemplate.getJsonTid();
   console.log(json);
   alert("导出成功! 请查看控制台输出");
 };
