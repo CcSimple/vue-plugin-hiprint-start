@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-07 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-07 21:06:46
+ * @LastEditTime: 2023-02-11 13:47:34
 -->
 <template>
   <div class="header">
@@ -36,7 +36,7 @@
     </div>
   </div>
   <!-- 动态渲染组件，懒得去弄路由了 -->
-  <keep-alive :include="keepInclude" :max="10">
+  <keep-alive>
     <component class="main" :is="demos[curDemo]" :msg="curDemo" />
   </keep-alive>
 </template>
@@ -44,6 +44,7 @@
 <script setup>
 import { ref } from "vue";
 import start01 from "./start-01/index.vue";
+import start02 from "./start-02/index.vue";
 // 链接
 const host = window.location.host;
 let href = "https://gitee.com/CcSimple/vue-plugin-hiprint";
@@ -57,13 +58,16 @@ const btnList = ref([
     demo: "start01",
     title: "使用 — 入门篇",
   },
+  {
+    demo: "start02",
+    title: "使用 — 入门篇2",
+  },
 ]);
 // demos 用于存放所有 demo
 const demos = {
   start01,
+  start02,
 };
-// keepInclude 用于存放当前 demo
-const keepInclude = ref(Object.values(demos).map((item) => item));
 // curDemo 用于存放当前 demo 的 name
 const curDemo = ref(Object.keys(demos)[0]);
 // 切换 demo

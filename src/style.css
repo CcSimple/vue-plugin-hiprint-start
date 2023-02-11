@@ -71,11 +71,20 @@ body {
 .ml-10 {
   margin-left: 10px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
 
 /* button 样式 为了好看点 */
 button {
   padding: 10px;
-  min-width: 100px;
+  min-width: 40px;
   color: white;
   opacity: 0.9;
   cursor: pointer;
@@ -90,10 +99,10 @@ button i {
 }
 .circle,
 .circle-4 {
-  border-radius: 4px;
+  border-radius: 4px !important;
 }
 .circle-10 {
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 /* 按钮颜色 */
 .primary {
@@ -103,9 +112,63 @@ button i {
   color: #000;
   background: none;
 }
+.info:hover {
+  color: purple;
+  border-color: purple;
+}
 .secondary {
   background: #1976d2;
 }
 .warning {
   background: #d32f2f;
+}
+
+/* modal */
+.modal {
+  padding: 0;
+  margin: 0;
+}
+.modal .mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  background-color: #00000073;
+}
+.modal .wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+  background-color: #00000073;
+  outline: 0;
+}
+.modal .wrap .box {
+  position: relative;
+  margin: 10% auto;
+  width: 40%;
+  background: #fff;
+  border-radius: 4px;
+  z-index: 1001;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.modal-box__header {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.modal-box__footer {
+  text-align: end;
+}
+.modal-box__footer button {
+  min-width: 100px;
+}
+.modal-box__footer button:not(:last-child) {
+  margin-right: 10px;
 }
