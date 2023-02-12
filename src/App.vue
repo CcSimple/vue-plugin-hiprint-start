@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-07 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-11 13:47:34
+ * @LastEditTime: 2023-02-12 19:46:50
 -->
 <template>
   <div class="header">
@@ -60,7 +60,7 @@ const btnList = ref([
   },
   {
     demo: "start02",
-    title: "使用 — 入门篇2",
+    title: "使用 — 进阶篇",
   },
 ]);
 // demos 用于存放所有 demo
