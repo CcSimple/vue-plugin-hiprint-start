@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-16 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-16 15:26:58
+ * @LastEditTime: 2023-02-25 22:48:09
 -->
 <template>
   <div class="flex-col">
@@ -104,7 +104,7 @@ const buildDesigner = () => {
     settingContainer: "#PrintElementOptionSetting", // 元素参数容器
   });
   // 构建 并填充到 容器中
-  hiprintTemplate.design("#hiprint-printTemplate");
+  hiprintTemplate.design("#hiprint-printTemplate", { grid: true }); // 0.0.46版本新增, 是否显示网格
   // ------ 构建多个设计器 ------
   // eslint-disable-next-line no-undef
   $("#hiprint-printTemplate2").empty(); // 先清空, 避免重复构建

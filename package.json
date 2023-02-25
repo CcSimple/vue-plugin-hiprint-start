@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-    "vue-plugin-hiprint": "^0.0.44-fix2"
+    "vue-plugin-hiprint": "^0.0.46"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
