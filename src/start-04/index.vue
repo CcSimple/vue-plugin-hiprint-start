@@ -4,12 +4,13 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-16 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-04-02 16:19:21
+ * @LastEditTime: 2023-04-02 23:06:58
 -->
 <template>
   <div class="flex-col">
     <div class="flex-row justify-center" style="margin-bottom: 10px">
       <button class="warning circle-10 ml-10" @click.stop="getProvider1(false)">模拟网络获取 provider 配置数据1(不清空)</button>
+      <button class="secondary circle-10 ml-10" @click.stop="updateTableColumns">更新 provider1 的表格列</button>
       <button class="warning circle-10 ml-10" @click.stop="getProvider2">模拟网络获取 provider 配置数据列表2</button>
       <button class="secondary circle-10 ml-10" @click.stop="getHtml">
         <i class="iconfont sv-preview" />
@@ -114,6 +115,29 @@ const getProvider2 = (clear = true) => {
     }, 2000);
   }).then((data) => {
     buildProvider(data, clear);
+  });
+};
+/**
+ * 动态更新 provider1 的表格列
+ */
+const updateTableColumns = () => {
+  hiprint.updateElementType("NetProvider1.tableCustom", (type) => {
+    // 查看 type 的结构
+    console.log(type);
+    type.title = "更新了列后的表格";
+    alert(`把表格列名称全部变成"名称"1, 并隐藏"金额1"列;\r\n请重新拖拽表格查看效果!`);
+    type.columns = [
+      [
+        { title: "名称1", align: "center", field: "NAME", width: 100 },
+        { title: "数量1", align: "center", field: "SL", width: 100 },
+        { title: "条码1", align: "center", field: "TM", width: 100 },
+        { title: "规格1", align: "center", field: "GG", width: 100 },
+        { title: "单价1", align: "center", field: "DJ", width: 100 },
+        { title: "金额1", align: "center", field: "JE", width: 100, checked: false },
+        { title: "备注1", align: "center", field: "DETAIL", width: 100 },
+      ],
+    ];
+    return type;
   });
 };
 /**
