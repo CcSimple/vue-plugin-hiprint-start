@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-07 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-16 14:17:23
+ * @LastEditTime: 2023-04-02 16:20:10
 -->
 <template>
   <div class="header">
@@ -46,6 +46,7 @@ import { ref } from "vue";
 import start01 from "./start-01/index.vue";
 import start02 from "./start-02/index.vue";
 import start03 from "./start-03/index.vue";
+import start04 from "./start-04/index.vue";
 // 链接
 const host = window.location.host;
 let href = "https://gitee.com/CcSimple/vue-plugin-hiprint";
@@ -67,12 +68,17 @@ const btnList = ref([
     demo: "start03",
     title: "使用 — 打印篇",
   },
+  {
+    demo: "start04",
+    title: "实战 — 动态provider",
+  },
 ]);
 // demos 用于存放所有 demo
 const demos = {
   start01,
   start02,
   start03,
+  start04,
 };
 // curDemo 用于存放当前 demo 的 name
 const curDemo = ref(Object.keys(demos)[0]);
