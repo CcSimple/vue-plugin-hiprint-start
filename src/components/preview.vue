@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-16 14:35:38
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-02-16 15:43:10
+ * @LastEditTime: 2023-04-11 13:40:27
 -->
 <template>
   <div class="modal" v-if="show">
@@ -26,7 +26,7 @@
 import { ref } from "vue";
 let $ = require("jquery");
 export default {
-  name: "start-03-preview",
+  name: "start-preview",
   setup() {
     const show = ref(false);
     const close = () => {

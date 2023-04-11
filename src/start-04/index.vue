@@ -4,7 +4,7 @@
  * @Github: https://github.com/CcSimple
  * @Date: 2023-02-16 11:52:50
  * @LastEditors: CcSimple
- * @LastEditTime: 2023-04-02 23:06:58
+ * @LastEditTime: 2023-04-11 13:41:50
 -->
 <template>
   <div class="flex-col">
@@ -38,7 +38,7 @@
         <div id="PrintElementOptionSetting"></div>
       </div>
     </div>
-    <start04Preview ref="preview" />
+    <start-preview ref="preview" />
   </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
 <script setup>
 import { onMounted, ref } from "vue";
 import { hiprint } from "vue-plugin-hiprint";
-import start04Preview from "./preview";
+import startPreview from "../components/preview.vue";
 import helper from "./provider-helper";
 import netData1 from "./net-provider1";
 import netData2 from "./net-provider2";
